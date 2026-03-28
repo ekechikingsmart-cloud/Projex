@@ -35,7 +35,7 @@ nav ul {
 
 /* Hero Section */
 .hero {
-  background-image: url('images/over.jpg'); /* full background on header */
+  background-image: url('over.jpg'); /* full background on header */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

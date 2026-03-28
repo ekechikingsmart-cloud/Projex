@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Work With Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="no-style-link home-link">Home</a></li>
+      <li><a href="index.html#aboutme" class="no-style-link">About Me</a></li>
+      <li><a href="work.html" class="no-style-link">Work With Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Work With Us Section -->
+  <section class="section work-section reveal">
+
+    <!-- First Block -->
+    <div class="work-block">
+      <p>We build all kinds of websites and apps. Come and work with us!</p>
+      <div class="image-box">
+        <img src="images/teach.jpg" alt="Teaching Coding" class="coding-img">
+      </div>
+    </div>
+
+    <!-- Second Block -->
+    <div class="work-block">
+      <p>Our team can handle e-commerce, blogs, and mobile apps efficiently.</p>
+      <div class="image-box">
+        <img src="images/tech.jpg" alt="Tech Work" class="coding-img">
+      </div>
+    </div>
+
+    <!-- Third Block -->
+    <div class="work-block">
+      <p>We focus on quality, creativity, and user-friendly design for every project.</p>
+      <div class="image-box">
+        <img src="images/code.jpg" alt="Coding Project" class="coding-img">
+      </div>
+    </div>
+
+    <!-- Facebook Link -->
+    <p>
+  Contact me on Facebook: 
+  <a href="https://www.facebook.com/share/1CaTUR5eBV/" target="_blank" class="no-style-link fb-link">
+    My Facebook Profile
+  </a>
+</p>
+  </section>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const revealElements = document.querySelectorAll('.reveal');
+
+    function revealOnScroll() {
+      const windowHeight = window.innerHeight;
+      revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+          el.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 My Brother's Website</p>
+  </footer>
+
+</body>
+</html>

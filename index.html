@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!---meta--->
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="30">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Brother's Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <nav>
+      <ul>
+        <li><a href="#home" class="no-style-link home-link">Home</a></li>
+        <li><a href="#aboutme" class="no-style-link"> About Me</a></li>
+        <li><a href="work.html" class="no-style-link">Work With Us</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1 class="animated-text">Welcome to my <span>Personal</span> website<img src="images/logo.png" alt="My Brother Logo" class="logo"></h1>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="aboutme" class="section reveal">
+    <h3>About Me</h3>
+    <div class="about-content">
+      <img src="images/ifebuche 1.jpg" alt="My Brother" class="about-img">
+      <p>Hello! My name is Ekechi Ifebuche Mordecai. Student of EBSU. I love reading books, playing football, and learning new things every day. This is my personal website to show who I am and what I like!</p>
+    </div>
+  </section>
+
+  <!-- Personal Info Section -->
+  <section id="info" class="section">
+    <h3>Personal Info</h3>
+    <ul>
+      <li>Birthday: March 23, 2003</li>
+      <li>Hobbies: Football, Reading, Gaming</li>
+      <li>Favorite Game: Football</li>
+    </ul>
+  </section>
+  <iframe 
+  src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_crypto&screen=crypto_mkt&displayCurrency=USD"
+  width="90%" 
+  height="400" 
+  frameborder="0">
+</iframe>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const revealElements = document.querySelectorAll('.reveal');
+
+    function revealOnScroll() {
+      const windowHeight = window.innerHeight;
+      revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+          el.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 My Brother's Website</p>
+  </footer>
+
+</body>
+</html>
